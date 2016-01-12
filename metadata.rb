@@ -5,3 +5,8 @@ license 'all_rights'
 description 'Installs/Configures rexcore'
 long_description 'Installs/Configures rexcore'
 version '0.1.0'
+
+depends 'chocolatey'
+depends 'chef-client'
+depends 'push-jobs'
+depends 'hostsfile'
