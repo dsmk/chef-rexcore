@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'all_rights'
 description 'Installs/Configures rexcore'
 long_description 'Installs/Configures rexcore'
-version '0.1.1'
+version '0.1.2'
 
 depends 'chocolatey'
 depends 'chef-client'
