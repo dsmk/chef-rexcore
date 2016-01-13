@@ -6,7 +6,7 @@
 
 require 'spec_helper'
 
-describe 'rexden::ark_client' do
+describe 'rexcore::ark_client' do
   context 'on Red Hat 7.0' do
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new(

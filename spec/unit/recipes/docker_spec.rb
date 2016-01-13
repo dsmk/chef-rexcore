@@ -6,14 +6,14 @@
 
 require 'spec_helper'
 
-describe 'rexden::docker_redhat' do
+describe 'rexcore::docker_redhat' do
   context 'on Red Hat 7.0' do
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new(
-        platform: 'redhat',
+        platform: 'centos',
         version: 7.0
       )
-      runner.converge("rexden::docker")
+      runner.converge("rexcore::docker")
     end
 
     it 'converges successfully' do
@@ -47,7 +47,7 @@ describe 'rexden::docker_redhat' do
         platform: 'ubuntu',
         version: 14.04
       )
-      runner.converge("rexden::docker")
+      runner.converge("rexcore::docker")
     end
 
     it 'converges successfully' do
