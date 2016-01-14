@@ -1,5 +1,4 @@
 include_recipe 'rexcore::ark_client'
-include_recipe 'rexcore::_virt_agent'
 #include_recipe 'rexden::users::all'
 
 %w[
