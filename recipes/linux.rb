@@ -1,4 +1,6 @@
-include_recipe 'rexcore::ark_client'
+if not node['rexden']['ark_client_disable']
+  include_recipe 'rexcore::ark_client'
+end
 #include_recipe 'rexden::users::all'
 
 %w[
